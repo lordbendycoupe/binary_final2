@@ -1,6 +1,6 @@
 # binary_final2
 
-to use the program place binary files in the working directory (binary_final2/) and run.
+to use the program place binary files in the working directory (binary_final2/), install depedencies and run.
 
 in the requirements.txt are the dependencies. 
 
@@ -22,7 +22,7 @@ linux/macos </br>
 python3 binarychallenge2.py
 
 windows </br> 
-python3 path/to/binary_final2
+py path/to/binarychallenege2.py
 
 
 
