@@ -19,7 +19,7 @@ import sys
 path = os.getcwd()
 file_list = os.listdir()
 file_storage = list()
-exclude = set(['New folder', 'Windows', 'Desktop', 'env', '.git']) 
+exclude = set(['New folder', 'Windows', 'Desktop', 'env', '.git', 'README.md', 'requirements.txt']) 
 
 while True:
    
@@ -27,7 +27,6 @@ while True:
         if len(file_list) >= 3: #2+ binaries & *.py
             for path, dirs, files in os.walk(path, topdown=True):
                 for filename in file_list:
-                    #dirs[:] = list(filter(lambda x: not x in exclude, dirs))
                     dirs[:] = [d for d in dirs if d not in exclude]
                     fullpath = os.path.join(path, filename)
                     if not filename.endswith('.py'):
