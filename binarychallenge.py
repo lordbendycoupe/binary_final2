@@ -13,7 +13,7 @@ import sys
 #i chose pandas dataframes due to their matrix like behavior, we can conceptualize mathematically a way to find the common strings and offse
 # for every file n, there exists a 1-d dataframes data[k].....data[j] for j,k <= n
 # therefore, there exists a data[i] such that i ɛ data[k] ∩ data[j] ... data[h]
-#assuming this is true, we can use point to each element that is in the intersection between 2 or more dataframes, and their index is the offset
+#assuming this is true, we can point to each element that is in the intersection between 2 or more dataframes, and their index is the offset
 
 
 path = os.getcwd()
